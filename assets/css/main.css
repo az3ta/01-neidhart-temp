@@ -6,6 +6,7 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: 600;
 	color: #fff;
+	line-height: 1.15;
 }
 
 header {
@@ -20,59 +21,50 @@ h1 {
 
 	font-style: italic;
 	text-transform: uppercase;
+	margin-bottom: 40px;
 }
 
 .one {
 	font-weight: 20;
 }
 
-main {
-	position: fixed;
-	left: 20px;
-	top: 100px;
-	z-index: 999;
-}
-
-p {
+h2 {
 	font-size: 2.5rem;
 	text-transform: uppercase;
-	line-height: 1.25;
+	margin-bottom: 20px;
+}
+
+header p {
+	font-size: 2.5rem;
+	text-transform: uppercase;
 }
 
 footer {
 	position: fixed;
 	left: 20px;
-	bottom: 20px;
+	bottom: 25px;
 	z-index: 999;
+}
+
+footer p {
+	font-size: 1.5rem;
+	margin-bottom: 5px;
+	font-style: italic;
 }
 
 footer a {
 	font-size: 1.5rem;
-	color: #000;
+	color: #fff;
 
 	text-decoration: none;
 	font-style: normal;
 }
 
-h4 {
-	font-size: 1.5rem;
+footer a:hover {
+	text-decoration: underline;
 }
 
 /* gallery */
-
-.siema {
-	min-height: 100%;
-	min-width: 100%;
-	margin: 0px;
-	padding: 0px;
-	position: absolute;
-}
-
-.image {
-	height: 500px;
-	background-position: center;
-	background-size: cover;
-}
 
 .slideshow div:nth-child(1) {
 	background-image: url('../img/img-1.jpg');
@@ -84,7 +76,7 @@ h4 {
 }
 
 .slideshow div:nth-child(3) {
-	background-image: url('../img/img-1.jpg');
+	background-image: url('../img/img-3.jpg');
 	animation-delay: 12s;
 }
 
@@ -94,7 +86,7 @@ h4 {
 }
 
 .slideshow div:nth-child(5) {
-	background-image: url('../img/img-1.jpg');
+	background-image: url('../img/img-3.jpg');
 	animation-delay: 24s;
 }
 
@@ -147,4 +139,28 @@ h4 {
 
 .no-cssanimations .cb-slideshow li span {
 	opacity: 1;
+}
+
+/* media query */
+
+@media (max-width: 800px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 550px) {
+	html {
+		font-size: 10px;
+	}
+
+	footer {
+		bottom: 20px;
+	}
+}
+
+@media (max-width: 390px) {
+	html {
+		font-size: 8px;
+	}
 }
