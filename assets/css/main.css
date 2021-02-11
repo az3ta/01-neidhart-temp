@@ -154,26 +154,6 @@ footer a:hover {
 	position: absolute;
 }
 
-/* .slideshow div:nth-child(8) {
-	/* animation: xfade 48s 0s infinite;
-	animation-timing-function: linear; */
-	animation-name: xfade4;
-	animation-duration: 24s;
-	animation-iteration-count: infinite;
-	position: absolute;
-}
-
-.slideshow div:nth-child(9) {
-	/* animation: xfade 54s 0s infinite;
-	animation-timing-function: linear; */
-	animation-name: xfade4;
-	animation-duration: 24s;
-	animation-iteration-count: infinite;
-	position: absolute; */
-}
-
-
-
 @keyframes xfade1 {
 	0% {
 		opacity: 1;
@@ -312,62 +292,27 @@ footer a:hover {
 	}
 }
 
-/* @keyframes xfade {
-	0% {
-		opacity: 0;
-		animation-timing-function: ease-in;
-	}
-	10.5% {
-		opacity: 1;
-		animation-timing-function: ease-out;
-	}
-	12.5% {
-		opacity: 0;
-	}
-	98% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-} */
-
-/* @keyframes imageAnimation {
-	0% {
-		opacity: 0;
-		animation-timing-function: ease-in;
-	}
-	8% {
-		opacity: 1;
-		animation-timing-function: ease-out;
-	}
-	17% {
-		opacity: 1;
-	}
-	25% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
-} */
-
 /* media query */
 
 @media (max-width: 800px) {
 	html {
 		font-size: 14px;
 	}
+
+	header {
+		top: 12px;
+		left: 10px;
+	}
+
+	footer {
+		bottom: 15px;
+		left: 10px;
+	}
 }
 
 @media (max-width: 550px) {
 	html {
 		font-size: 10px;
-	}
-
-	footer {
-		bottom: 20px;
 	}
 }
 
